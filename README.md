@@ -169,7 +169,7 @@ The value of these parameters has been tweaked to use 0.9.4 specs with a PROGPOW
 | `PROGPOW_CNT_CACHE`   | `12`  | `11`  | `4`  |
 | `PROGPOW_CNT_MATH`    | `20`  | `18`  | `6`  |
 
-Epoch length = 12000 blocks
+Epoch length = 7500 blocks
 
 ## Maintainers & Authors
 
