@@ -31,21 +31,21 @@ __device__ __constant__ const uint32_t keccakf_rndc[24] = {
 };
 
 __device__ __constant__ const uint32_t evrmore_rndc[15] = {
-        0x00000045, //E
-        0x00000056, //V
-        0x00000052, //R
-        0x0000004D, //M
-        0x0000004F, //O
-        0x00000052, //R
-        0x00000045, //E
-        0x0000002D, //-
-        0x00000050, //P
-        0x00000052, //R
-        0x0000004F, //O
-        0x00000047, //G
-        0x00000050, //P
-        0x0000004F, //O
-        0x00000057, //W
+        0x00000061, //a
+        0x00000077, //w
+        0x00000065, //e
+        0x00000073, //s
+        0x0000006F, //o
+        0x0000006D, //m
+        0x00000065, //e
+        0x00000070, //p
+        0x0000006F, //o
+        0x00000077, //w
+        0x00000070, //p
+        0x0000006F, //o
+        0x00000077, //w
+        0x00000070, //p
+        0x0000006F, //o
 };
 // Implementation of the permutation Keccakf with width 800.
 __device__ __forceinline__ void keccak_f800_round(uint32_t st[25], const int r)
