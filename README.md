@@ -1,10 +1,10 @@
 # awesomepowminer (ethminer fork with ProgPoW implementation)
 
-Evrprogpowminer is a fork of Ravencoin's [kawpowminer ](https://github.com/RavenCommunity/kawpowminer). Like kawpowminer, it is a derivative of Ethash enhanced with [Programmable Proof of Work](https://github.com/ifdefelse/progpow) for ASIC and FPGA resistance.
+AwesomepowMiner is a fork of Ravencoin's [kawpowminer ](https://github.com/RavenCommunity/kawpowminer). Like kawpowminer, it is a derivative of Ethash enhanced with [Programmable Proof of Work](https://github.com/ifdefelse/progpow) for ASIC and FPGA resistance.
 
 Compared to kawpowminer, awesomepowminer has the following differences:
 * Starting DAG size at block #1 is 3GigaBytes
-* EPOCH duration is 12000 blocks
+* EPOCH duration is 7500 blocks
 * awesomepowminer supports direct solo mining to pointsd/points-qt without needing a stratum proxy
 * the random starting seeds are slightly different for uniqueness
 * improved detection of nVidia GPU memory size
@@ -38,7 +38,7 @@ Also, if you are solo mining direct to pointsd or points-qt, before launching aw
 
 ===============
 
-> evrprogpowpow miner with OpenCL, CUDA and stratum support
+> AwesomepowMiner miner with OpenCL, CUDA and stratum support
 
 **awesomepowminer** is an ProgPoW GPU mining worker: with awesomepowminer you can mine Evrmore, which relies on an ProgPoW-based Proof of Work thus including Ethereum ProgPoW and others. This is the actively maintained version of awesomepowminer. It originates from the [ethminer](https://github.com/ethereum-mining/ethminer) project. Check the original [ProgPoW](https://github.com/ifdefelse/progpow) implementation and [EIP-1057](https://eips.ethereum.org/EIPS/eip-1057) for specification.
 
