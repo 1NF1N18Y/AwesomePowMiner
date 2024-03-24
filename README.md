@@ -156,18 +156,18 @@ ProgPoW can be tuned using the following parameters.  The proposed settings have
 * `PROGPOW_CNT_CACHE`: The number of cache accesses per loop
 * `PROGPOW_CNT_MATH`: The number of math operations per loop
 
-The value of these parameters has been tweaked to use 0.9.4 specs with a PROGPOW_PEROD of 3 to fit Evrmore's blocktimes.  See [this medium post](https://medium.com/@ifdefelse/progpow-progress-da5bb31a651b) for details.
+The value of these parameters has been tweaked to use 0.9.4 specs with a PROGPOW_PEROD of 3 to fit Points's blocktimes.  See [this medium post](https://medium.com/@ifdefelse/progpow-progress-da5bb31a651b) for details.
 
 | Parameter             | 0.9.2 | 0.9.3 | 0.9.4 |
 |-----------------------|-------|-------|--------|
 | `PROGPOW_PERIOD`      | `50`  | `10`  |  `3`   |
-| `PROGPOW_LANES`       | `16`  | `16`  |  `16`  |
-| `PROGPOW_REGS`        | `32`  | `32`  |  `32`  |
+| `PROGPOW_LANES`       | `16`  | `16`  |  `8`  |
+| `PROGPOW_REGS`        | `32`  | `32`  |  `6`  |
 | `PROGPOW_DAG_LOADS`   | `4`   | `4`   |  `4`   |
-| `PROGPOW_CACHE_BYTES` | `16x1024` | `16x1024` | `16x1024` |
+| `PROGPOW_CACHE_BYTES` | `16x1024` | `16x1024` | `8x1024` |
 | `PROGPOW_CNT_DAG`     | `64`  | `64`  | `64`  |
-| `PROGPOW_CNT_CACHE`   | `12`  | `11`  | `11`  |
-| `PROGPOW_CNT_MATH`    | `20`  | `18`  | `18`  |
+| `PROGPOW_CNT_CACHE`   | `12`  | `11`  | `4`  |
+| `PROGPOW_CNT_MATH`    | `20`  | `18`  | `6`  |
 
 Epoch length = 12000 blocks
 
@@ -219,13 +219,13 @@ The new WDDM 2.x driver on Windows 10 uses a different way of addressing the GPU
 
 ### Why is a GTX 1080 slower than a GTX 1070?
 
-Because of the GDDR5X memory, which can't be fully utilized for Evrmore mining (yet).
+Because of the GDDR5X memory, which can't be fully utilized for AwesomePow mining (yet).
 
 ### Are AMD cards also affected by slowdowns with increasing DAG size?
 
 Only GCN 1.0 GPUs (78x0, 79x0, 270, 280), but in a different way. You'll see that on each new epoch (30K blocks), the hashrate will go down a little bit.
 
-### Can I still mine Evrmore with my 2GB GPU?
+### Can I still mine Points with my 2GB GPU?
 
 Not really, your VRAM must be above the DAG size (Currently about 3 GB.) to get best performance. Without it severe hash loss will occur.
 
